@@ -6,15 +6,15 @@
 
 body {
   color: #b3b3b3;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
 }
 
 .container {
   width: 100%;
   height: 100vh;
-  /* background-color: rgb(203, 163, 163); */
   overflow: hidden;
+  /* background-color: rgb(203, 163, 163); */
 }
 
 main {
@@ -43,11 +43,11 @@ main {
 }
 
 .logo img {
-  height: 50%;
+  width: 70%;
 }
 
 .left-nav-home {
-  background-color: rgb(108, 196, 118);
+  background-color: rgba(108, 196, 118, .2);
 }
 
 .left-nav-home ul {
@@ -55,7 +55,7 @@ main {
 }
 
 .left-nav-home li {
-  padding: 0 8px;
+  padding: 6px 0;
 }
 
 .left-nav-home a {
@@ -63,11 +63,21 @@ main {
   color: white;
 }
 
-.left-nav-playlist{
+.left-nav-playlist {
   flex-grow: 2;
   min-height: 200px;
   overflow-y: auto;
-  background-color: rgb(95, 217, 221);
+  margin-top: 24px;
+  background-color: rgba(95, 217, 221, .2);
+}
+
+.left-nav-playlist ul {
+  list-style: none;
+}
+
+.left-nav-playlist a {
+  text-decoration: none;
+  color: #b3b3b3;
 }
 
 #playlist {
@@ -89,9 +99,27 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
+  display: flex;
   background-color: #282828;
 }
 
 /* Colors */
+.blue {
+  background-color: rgb(98, 140, 203);
+}
+
+.yellow {
+  background-color: rgb(209, 210, 136);
+}
+
+.green {
+  background-color: rgb(123, 184, 110);
+}
+
 /* Padding */
 /* Margins */
+/* Dimensions */
+.box {
+  height: 100%;
+  width: 100%;
+}
